@@ -10,6 +10,7 @@ This project is a comprehensive replica of the Samsung user interface, designed 
 ## Table of Contents
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Dependencies](#dependencies)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -35,6 +36,26 @@ This project is a comprehensive replica of the Samsung user interface, designed 
 - **Deployment**: GitHub Pages or Netlify for hosting
 - **Testing**: Jest for unit tests, Cypress for end-to-end testing
 - **Other Tools**: ESLint for code linting, Prettier for formatting
+
+## Dependencies
+This project uses the following libraries and frameworks (based on package.json):
+- **React** (v18.2.0): For building the user interface components.
+- **React DOM** (v18.2.0): For rendering React components in the DOM.
+- **Axios** (v1.4.0): For making HTTP requests to APIs.
+- **Lodash** (v4.17.21): For utility functions.
+- **Font Awesome** (v6.4.0): For icons.
+- **Swiper** (v9.3.2): For touch-enabled sliders and carousels.
+- **GSAP** (v3.12.2): For advanced animations.
+- **Bootstrap** (v5.3.0): For responsive grid and UI components.
+- **jQuery** (v3.7.0): For DOM manipulation (if used in legacy parts).
+- **Webpack** (v5.88.0): For module bundling.
+- **Babel** (v7.22.0): For JavaScript transpilation.
+- **Jest** (v29.5.0): For unit testing.
+- **Cypress** (v12.17.0): For end-to-end testing.
+- **ESLint** (v8.44.0): For code linting.
+
+
+*Note: Versions are indicative; check package.json for exact dependencies.*
 
 ## Prerequisites
 - Node.js (version 14 or higher)
@@ -94,4 +115,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 - Inspired by Samsung's official UI designs.
 - Thanks to the open-source community for tools and libraries used.
-- Icons and assets sourced from [Unsplash](https://unsplash.com/) or similar (ensure compliance with licenses).
