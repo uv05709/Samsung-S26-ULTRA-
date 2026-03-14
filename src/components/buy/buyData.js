@@ -128,7 +128,7 @@ export const buyVariants = {
       ],
       compareModels: [
         { name: "Galaxy S26 Ultra", image: "/compare the  models s26ultra.avif" },
-        { name: "Galaxy S26+", image: "/compare the  models s26+.webp" },
+        { name: "Galaxy S26+", image: "/Galaxy S26 S26+.avif" },
         { name: "Galaxy S26", image: "/compare the  modelss26.avif" },
       ],
       compareDetails: [
@@ -246,7 +246,7 @@ export const buyVariants = {
         { image: "/actual size.avif", alt: "Galaxy S26+ size visual" },
       ],
       compareModels: [
-        { name: "Galaxy S26+", image: "/compare the  models s26+.webp" },
+        { name: "Galaxy S26+", image: "/Galaxy S26 S26+.avif" },
         { name: "Galaxy S26", image: "/compare the  modelss26.avif" },
       ],
       compareDetails: [

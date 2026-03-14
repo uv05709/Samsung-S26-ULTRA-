@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal";
 const lineup = [
   {
     title: "Galaxy S26 | S26+",
-    image: "/Galaxy S26 26+.avif",
+    image: "/Galaxy S26 S26+.avif",
     alt: "Galaxy S26 and S26 Plus",
     cta: "Buy",
     href: "/smartphones/galaxy-s26-ultra/buy/",
