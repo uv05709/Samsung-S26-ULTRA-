@@ -1,0 +1,74 @@
+.galaxy26-bixby,
+.galaxy26-ecosystem {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(1.6rem, 4vw, 4rem);
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.4rem, 6vw, 6rem);
+  background: #fff;
+}
+
+.galaxy26-innovation,
+.galaxy26-box {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(1.6rem, 4vw, 4rem);
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.4rem, 6vw, 6rem);
+  background: #fff;
+}
+
+.galaxy26-box {
+  background: #f7f7f7;
+}
+
+.bixby-copy h3,
+.knox-copy h3,
+.galaxy26-oneui h3,
+.ecosystem-copy h3,
+.galaxy26-accessories h3,
+.galaxy26-faq h3 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 4.6vw, 4.4rem);
+  line-height: 1.12;
+}
+
+.bixby-copy p,
+.knox-copy p,
+.ecosystem-copy p,
+.galaxy26-oneui .oneui-copy {
+  margin: 0;
+  color: #3c4558;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.bixby-media img,
+.ecosystem-media img,
+.innovation-media img,
+.box-media img {
+  width: 100%;
+  display: block;
+  border-radius: 2rem;
+  box-shadow: 0 24px 60px rgba(15, 24, 40, 0.14);
+}
+
+.innovation-copy h3,
+.box-copy h3 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.2rem, 4.6vw, 4.4rem);
+  line-height: 1.12;
+}
+
+.innovation-copy p,
+.box-copy p {
+  margin: 0;
+  color: #3c4558;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.box-copy p + p,
+.innovation-copy p + p {
+  margin-top: 1rem;
+}

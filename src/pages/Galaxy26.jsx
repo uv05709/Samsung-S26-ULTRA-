@@ -114,19 +114,25 @@ const Galaxy26 = () => {
       const wordSpans = words.map((word, idx) => {
         const span = document.createElement("span");
         span.className = "reveal-word";
-        span.textContent = `${word}${idx === words.length - 1 ? "" : " "}`;
+        span.textContent = word;
         element.appendChild(span);
+        if (idx !== words.length - 1) {
+          element.appendChild(document.createTextNode(" "));
+        }
         return span;
       });
       let line = document.createElement("span");
       line.className = "reveal-line";
       let currentTop = null;
       const lines = [];
-      wordSpans.forEach((span) => {
+      wordSpans.forEach((span, idx) => {
         const top = span.offsetTop;
         if (currentTop === null) {
           currentTop = top;
           line.appendChild(span);
+          if (idx !== words.length - 1) {
+            line.appendChild(document.createTextNode(" "));
+          }
           return;
         }
         if (Math.abs(top - currentTop) > 2) {
@@ -136,6 +142,9 @@ const Galaxy26 = () => {
           currentTop = top;
         }
         line.appendChild(span);
+        if (idx !== words.length - 1) {
+          line.appendChild(document.createTextNode(" "));
+        }
       });
       lines.push(line);
       element.innerHTML = "";

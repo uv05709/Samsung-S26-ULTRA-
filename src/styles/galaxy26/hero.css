@@ -1,0 +1,243 @@
+.galaxy26-hero {
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.galaxy26-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(26, 27, 48, 0.55) 0%, rgba(29, 35, 78, 0.35) 45%, rgba(32, 38, 90, 0.1) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.galaxy26-hero picture,
+.galaxy26-hero img {
+  display: block;
+  width: 100%;
+}
+
+.galaxy26-hero img {
+  border-radius: 0;
+  min-height: 78vh;
+  object-fit: cover;
+  object-position: 70% center;
+}
+
+.galaxy26-hero-copy {
+  position: absolute;
+  left: clamp(1.5rem, 6vw, 8rem);
+  top: 38%;
+  transform: translateY(-30%);
+  color: #fff;
+  z-index: 2;
+  max-width: 560px;
+  text-align: center;
+}
+
+.galaxy26-hero-copy.hero-only-cta {
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  max-width: none;
+}
+
+.galaxy26-hero-copy p {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.hero-kicker {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1.1rem;
+}
+
+.galaxy26-hero-copy h1 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: clamp(2.6rem, 4.8vw, 4.4rem);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+
+.hero-ai {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: clamp(1.3rem, 3vw, 2.1rem);
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  text-wrap: balance;
+  line-height: 1.15;
+}
+
+.hero-spark {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, #7dd3fc 0%, #60a5fa 55%, transparent 70%);
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.8);
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.4rem;
+  padding: 0 1.3rem;
+  border-radius: 999px;
+  border: 1px solid #fff;
+  color: #111;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+@media (max-width: 1024px) {
+  .galaxy26-hero img {
+    min-height: 72vh;
+    object-position: 66% center;
+  }
+
+  .galaxy26-hero-copy {
+    top: clamp(5.5rem, 14vh, 9rem);
+    max-width: 420px;
+  }
+
+  .galaxy26-hero-copy.hero-only-cta {
+    top: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .galaxy26-hero img {
+    min-height: 70vh;
+    object-position: 60% center;
+  }
+
+  .galaxy26-hero-copy {
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 1rem;
+    width: fit-content;
+    max-width: min(92vw, 360px);
+    padding: 0.1rem 0.1rem;
+    border-radius: 1rem;
+  } 
+
+  .galaxy26-hero-copy.hero-only-cta {
+    top: 44%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding: 0;
+    width: fit-content;
+    max-width: none;
+  }
+
+  .galaxy26-hero-copy p {
+    font-size: 0.95rem;
+  }
+
+  .galaxy26-hero-copy h1 {
+    font-size: clamp(2rem, 7vw, 2.8rem);
+  }
+
+  .hero-ai {
+    font-size: clamp(1.1rem, 4vw, 1.6rem);
+    margin-bottom: 1rem;
+  }
+
+  .galaxy26-hero-copy div {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .galaxy26-offer-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .galaxy26-hero-copy {
+    bottom: 1rem;
+  }
+
+  .galaxy26-hero-copy.hero-only-cta {
+    top: 42%;
+  }
+
+  .galaxy26-hero-copy h1 {
+    font-size: 2rem;
+  }
+
+  .hero-ai {
+    font-size: 1.15rem;
+  }
+
+  .galaxy26-hero-copy a {
+    height: 2.2rem;
+    padding: 0 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+.galaxy26-hero-copy div {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.hero-cta-wrap {
+  margin-top: 0.6rem;
+}
+
+.hero-only-cta .hero-cta-wrap {
+  margin-top: 0;
+}
+
+.galaxy26-hero-copy a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  padding: 0 1.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid #fff;
+  background: #fff;
+  color: #111;
+}
+
+.galaxy26-hero-copy a.ghost {
+  background: transparent;
+  color: #fff;
+}
+
+.galaxy26-offer-strip {
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.15rem clamp(1rem, 4vw, 4.4rem);
+}
+
+.galaxy26-offer-strip p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.galaxy26-offer-strip a {
+  border-bottom: 1px solid #fff;
+  font-weight: 700;
+}

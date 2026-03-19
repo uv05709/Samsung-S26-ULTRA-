@@ -1,0 +1,263 @@
+﻿.nav-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+  background: transparent;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.main-nav {
+  border-bottom: 1px solid transparent;
+  padding: 0.9rem clamp(1rem, 3.4vw, 2.9rem);
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.7rem;
+  line-height: 1;
+}
+
+.logo-svg {
+  width: 112px;
+  height: 19px;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.nav-links li {
+  position: relative;
+  padding: 0.2rem 0;
+}
+
+.nav-links a,
+.support-link {
+  color: #111;
+}
+
+.nav-links a:hover,
+.support-link:hover {
+  color: #0d69d9;
+}
+
+.support-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.icon-btn {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #111;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: #e7eaee;
+}
+
+.nav-right {
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-utility {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.search-pill {
+  height: 2.2rem;
+  min-width: 150px;
+  padding: 0 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.search-pill span {
+  font-weight: 500;
+}
+
+.icon-plain {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  width: 1.35rem;
+  height: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.12rem;
+}
+
+.nav-on-hero .logo,
+.nav-on-hero .nav-links a,
+.nav-on-hero .support-link,
+.nav-on-hero .icon-btn,
+.nav-on-hero .search-pill,
+.nav-on-hero .icon-plain {
+  color: #fff;
+}
+
+.nav-on-hero,
+.nav-on-hero .main-nav {
+  border-bottom-color: transparent;
+}
+
+.nav-on-hero .icon-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-on-hero .search-pill {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.nav-on-hero .nav-links a:hover,
+.nav-on-hero .support-link:hover {
+  color: #dbeafe;
+}
+
+.nav-scrolled {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+
+.nav-scrolled .main-nav {
+  border-bottom-color: #ececec;
+}
+
+.nav-scrolled .logo,
+.nav-scrolled .nav-links a,
+.nav-scrolled .support-link,
+.nav-scrolled .search-pill,
+.nav-scrolled .icon-plain {
+  color: #111;
+}
+
+.nav-scrolled .search-pill {
+  border-color: #e7e7e7;
+  background: #f7f7f7;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.mega-menu {
+  max-height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid transparent;
+  transition: max-height 0.3s ease, border-color 0.3s ease;
+  background: #fff;
+}
+
+.mega-menu.open {
+  max-height: 360px;
+  border-color: #ececec;
+}
+
+.mega-inner {
+  padding: 1.3rem clamp(1rem, 4vw, 3rem) 1.45rem;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.2rem;
+}
+
+.mega-feature {
+  padding: 1rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #eff5ff, #f7fbff);
+}
+
+.mega-feature p {
+  margin: 0;
+  color: #202d3f;
+  font-size: 0.88rem;
+}
+
+.mega-feature a {
+  margin-top: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  color: #0d69d9;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.mega-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.mega-col {
+  border-left: 1px solid #eceff3;
+  padding-left: 1rem;
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+}
+
+.mega-col a {
+  font-size: 0.84rem;
+  color: #2f3a4a;
+}
+
+.mega-col a:hover {
+  color: #0d69d9;
+}
+

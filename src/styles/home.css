@@ -1,0 +1,419 @@
+﻿.hero-section {
+  --nav-offset: 0px;
+  padding: 0;
+  height: 150vh;
+  position: relative;
+}
+
+.hero-sticky {
+  position: sticky;
+  top: var(--nav-offset);
+  height: calc(100vh - var(--nav-offset));
+  padding: 0;
+  overflow: hidden;
+}
+
+.hero-banner {
+  height: 100%;
+  width: 100vw;
+  max-width: none;
+  margin: 0 auto;
+  border-radius: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  position: relative;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+  display: block;
+}
+
+.hero-copy {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4.8vw, 4rem);
+  line-height: 1.05;
+}
+
+.hero-text {
+  margin: 0.55rem 0 1.35rem;
+  color: #0f172a;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-left: clamp(0.7rem, 2.1vw, 2rem);
+  margin-bottom: clamp(0.5rem, 1.2vw, 1rem);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.7rem 1.35rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.14);
+}
+
+.btn-ghost {
+  border: 1px solid #111;
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+}
+
+.btn-link {
+  border-radius: 0;
+  border: 0;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 0.72rem;
+  line-height: 1;
+  padding: 0.42rem 0.9rem;
+}
+
+.feature-promo-section {
+  padding: 0.7rem clamp(1rem, 4vw, 3rem) 0.3rem;
+}
+
+.feature-promo-banner {
+  min-height: clamp(280px, 40vw, 460px);
+  max-width: 1320px;
+  margin: 0 auto;
+  background-image: url("/Galaxy S26 ULTRA Buds.avif");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.1rem;
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(0.8rem, 1.4vw, 1.1rem);
+}
+
+.feature-promo-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: clamp(0.7rem, 1.8vw, 1.6rem);
+  margin-bottom: clamp(0.45rem, 1.1vw, 0.9rem);
+}
+
+.btn-link-dark {
+  border-radius: 0;
+  border: 0;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid #111;
+  color: #111;
+  font-size: 0.68rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.btn-outline-dark {
+  background: transparent;
+  border: 1px solid #111;
+  color: #111;
+  font-size: 0.68rem;
+  line-height: 1;
+  padding: 0.4rem 0.82rem;
+}
+
+.hero-banner .btn {
+  box-shadow: none;
+  transform: none;
+}
+
+.hero-banner .btn:hover {
+  transform: none;
+  box-shadow: none;
+  opacity: 0.88;
+}
+
+.category-section,
+.content-wrap,
+.story-section {
+  padding: 2.7rem clamp(1rem, 4vw, 3rem);
+}
+
+.lineup-section {
+  padding: 1.8rem clamp(1rem, 4vw, 3rem) 0.7rem;
+}
+
+.four-section-wrap {
+  padding: 0.35rem clamp(1rem, 4vw, 3rem) 0.5rem;
+}
+
+.four-section-banner {
+  max-width: 1320px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  border-radius: 0.15rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.four-section-banner img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.four-section-copy {
+  position: absolute;
+  left: clamp(1.2rem, 4vw, 4.2rem);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.four-section-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4.1rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.four-section-copy p {
+  margin: 0.8rem 0 1.15rem;
+  font-size: clamp(1rem, 1.7vw, 2rem);
+  line-height: 1.2;
+}
+
+.four-section-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.four-section-actions a {
+  font-weight: 700;
+  font-size: clamp(0.78rem, 1vw, 1.6rem);
+}
+
+.four-section-actions a:first-child {
+  border-bottom: 1px solid #111;
+  padding-bottom: 0.1rem;
+}
+
+.four-view-all {
+  border: 1px solid #111;
+  border-radius: 999px;
+  padding: 0.42rem 1.2rem;
+}
+
+.lineup-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.lineup-card {
+  background: #f3f3f3;
+  border-radius: 0.2rem;
+  border: 1px solid #ededed;
+  min-height: 320px;
+  padding: 1rem 1rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.lineup-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.1);
+}
+
+.lineup-card h3 {
+  margin: 0;
+  font-family: "SamsungOne", "Samsung One", "SamsungOne Latin", "SamsungOneKorean", "Helvetica Neue", arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.lineup-card img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+}
+
+.lineup-cta {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(14px);
+  height: 2.2rem;
+  min-width: 95px;
+  padding: 0 1.05rem;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.lineup-card:hover .lineup-cta,
+.lineup-card:focus-within .lineup-cta {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.category-section h2,
+.reasons-section h2,
+.recommend-section h2,
+.stores-section h2,
+.story-section h2 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+}
+
+.essential-tabs {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.essential-tabs a {
+  border: 1px solid #d9dde3;
+  border-radius: 999px;
+  padding: 0.42rem 0.84rem;
+  font-size: 0.78rem;
+  color: #334155;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.essential-tabs a:hover {
+  border-color: #0d69d9;
+  color: #0d69d9;
+}
+
+.essential-tabs a.active {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.essential-grid,
+.reasons-grid,
+.recommend-grid,
+.stores-grid,
+.story-grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.essential-grid,
+.reasons-grid,
+.recommend-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.stores-grid,
+.story-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reasons-section,
+.recommend-section,
+.stores-section {
+  margin-top: 0.4rem;
+}
+
+.ui-card {
+  border: 1px solid #e4e8ee;
+  border-radius: 1.05rem;
+  background: #fff;
+  padding: 1.1rem;
+  min-height: 154px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+}
+
+.ui-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.1);
+  border-color: #ced6e2;
+}
+
+.ui-card-compact {
+  min-height: 130px;
+}
+
+.ui-card h3,
+.ui-card p {
+  margin: 0;
+}
+
+.ui-card h3 {
+  font-size: 1rem;
+}
+
+.ui-card p {
+  margin-top: 0.5rem;
+  color: #4b5565;
+  font-size: 0.88rem;
+}
+
+.ui-card a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #0d69d9;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+

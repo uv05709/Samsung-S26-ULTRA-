@@ -1,0 +1,162 @@
+.galaxy26-page {
+  background: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.galaxy26-page * {
+  box-sizing: border-box;
+  vertical-align: top;
+  word-spacing: 0.04em;
+}
+
+.galaxy26-page h1,
+.galaxy26-page h2,
+.galaxy26-page h3,
+.galaxy26-page h4,
+.galaxy26-page h5,
+.galaxy26-page h6 {
+  font-family: "SamsungSharpSans", "SamsungOne", "Samsung One", "SamsungOne Latin", "SamsungOneKorean", sans-serif;
+  font-weight: 700;
+}
+
+.galaxy26-page p,
+.galaxy26-page li,
+.galaxy26-page span,
+.galaxy26-page a,
+.galaxy26-page strong {
+  font-family: "SamsungOne", "Samsung One", "SamsungOne Latin", "SamsungOneKorean", "Helvetica Neue", arial, sans-serif;
+}
+
+.galaxy26-page h1,
+.galaxy26-page h2,
+.galaxy26-page h3,
+.galaxy26-page h4,
+.galaxy26-page h5,
+.galaxy26-page h6 {
+  margin: 0 0 0.6rem;
+}
+
+.galaxy26-page p {
+  margin: 0 0 1rem;
+}
+
+.galaxy26-page p:last-child {
+  margin-bottom: 0;
+}
+
+.galaxy26-page .galaxy26-performance-copy > p,
+.galaxy26-page .galaxy26-privacy-copy p,
+.galaxy26-page .galaxy26-vapor-copy,
+.galaxy26-page .galaxy26-storage-copy p,
+.galaxy26-page .space-zoom-copy p,
+.galaxy26-page .selfie-copy p,
+.galaxy26-page .bixby-copy p,
+.galaxy26-page .knox-copy p,
+.galaxy26-page .ecosystem-copy p,
+.galaxy26-page .oneui-copy,
+.galaxy26-page .photo-assist-copy {
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+
+.galaxy26-page .galaxy26-performance-copy > p:last-child,
+.galaxy26-page .galaxy26-privacy-copy p:last-child,
+.galaxy26-page .galaxy26-vapor-copy:last-child,
+.galaxy26-page .galaxy26-storage-copy p:last-child,
+.galaxy26-page .space-zoom-copy p:last-child,
+.galaxy26-page .selfie-copy p:last-child,
+.galaxy26-page .bixby-copy p:last-child,
+.galaxy26-page .knox-copy p:last-child,
+.galaxy26-page .ecosystem-copy p:last-child,
+.galaxy26-page .oneui-copy:last-child,
+.galaxy26-page .photo-assist-copy:last-child {
+  margin-bottom: 0;
+}
+
+.galaxy26-page .common-headline01 {
+  font-family: "SamsungSharpSans", "SamsungOne", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+@media (min-width: 535px) and (max-width: 768px) {
+  .galaxy26-page .common-headline01 {
+    font-size: 4.58333vw;
+  }
+}
+
+.galaxy26-page .common-text-center .common-headline01 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.galaxy26-page .common-text {
+  display: block;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.galaxy26-page .reveal-line {
+  display: block;
+  overflow: hidden;
+}
+
+.galaxy26-page .reveal-word {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.galaxy26-page .common-text-center .common-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.galaxy26-page .container {
+  width: 65vw;
+  max-width: 950px;
+  margin: auto;
+}
+
+.galaxy26-page .common-text-move,
+.galaxy26-page .common-text-move .common-text {
+  opacity: 0;
+  transform: translateY(70%);
+  transition: transform 0.8s cubic-bezier(0, 0.18, 0.07, 1),
+    opacity 1s cubic-bezier(0, 0.18, 0.07, 1);
+}
+
+.galaxy26-page .common-text-move.is-moved,
+.galaxy26-page .common-text-move.is-moved .common-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.galaxy26-page .features-intro-overview__description {
+  font-family: "SamsungOne", "Samsung One", "SamsungOne Latin", "SamsungOneKorean", "Helvetica Neue", arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 1.94444vw, 2.2rem);
+  line-height: 1.357;
+}
+
+@media (min-width: 535px) and (max-width: 768px) {
+  .galaxy26-page .features-intro-overview__description {
+    font-size: 2.36111vw;
+  }
+}
+
+.galaxy26-main {
+  padding-top: 0;
+}

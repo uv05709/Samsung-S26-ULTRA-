@@ -1,0 +1,41 @@
+.galaxy26-oneui {
+  text-align: center;
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.4rem, 6vw, 6rem);
+  background: #fff;
+}
+
+.galaxy26-oneui .eyebrow,
+.galaxy26-ecosystem .eyebrow,
+.galaxy26-accessories .eyebrow,
+.galaxy26-innovation .eyebrow,
+.galaxy26-box .eyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 0.18em;
+  color: #1d6fe8;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.galaxy26-oneui h3 {
+  margin-bottom: clamp(1.6rem, 3vw, 2.4rem);
+}
+
+.oneui-media {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border-radius: 2rem;
+  background: linear-gradient(120deg, #f1eefc 0%, #e9ebfb 100%);
+  box-shadow: 0 24px 60px rgba(15, 24, 40, 0.12);
+}
+
+.oneui-media img {
+  width: 100%;
+  display: block;
+  border-radius: 1.6rem;
+}
+
+.galaxy26-oneui .oneui-copy {
+  max-width: 980px;
+  margin: clamp(1.6rem, 3vw, 2.4rem) auto 0;
+}

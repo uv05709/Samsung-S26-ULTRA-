@@ -1,0 +1,160 @@
+.galaxy26-intro-dark {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: clamp(3rem, 8vw, 6rem) 1rem clamp(4rem, 8vw, 7rem);
+}
+
+.galaxy26-intro-dark p {
+  margin: 0 auto;
+  max-width: 1160px;
+  font-size: clamp(2rem, 3.6vw, 4rem);
+  line-height: 1.26;
+  font-weight: 700;
+}
+
+.galaxy26-highlights {
+  background: #000;
+  color: #fff;
+  padding: 0 clamp(0.7rem, 2vw, 1.2rem) 2.2rem;
+}
+
+.galaxy26-highlights-inner {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.galaxy26-headline {
+  text-align: center;
+  min-height: 128px;
+}
+
+.galaxy26-headline p {
+  margin: 0;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  color: #2182ff;
+  font-weight: 700;
+}
+
+.galaxy26-headline h2 {
+  margin: 0.35rem 0 0;
+  font-size: clamp(2.6rem, 6vw, 6.2rem);
+  line-height: 1.03;
+}
+
+.galaxy26-video-stage {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: minmax(72px, 170px) 1fr minmax(72px, 170px);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.galaxy26-side-card {
+  border-radius: 1.2rem;
+  overflow: hidden;
+  opacity: 0.24;
+  background: #101010;
+}
+
+.galaxy26-side-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galaxy26-center-card {
+  position: relative;
+  min-height: min(72vh, 760px);
+  border-radius: 1.35rem;
+  overflow: hidden;
+  background: #121212;
+}
+
+.galaxy26-center-card video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.35s ease, transform 0.45s ease;
+}
+
+.galaxy26-center-card video.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.galaxy26-dots {
+  margin-top: 0.95rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.galaxy26-dots button {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 999px;
+  border: 0;
+  background: #707070;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.galaxy26-dots button.active {
+  width: 2rem;
+  background: #fff;
+}
+
+.galaxy26-specs-teaser {
+  background: #000;
+  color: #fff;
+  padding: clamp(3rem, 7vw, 6rem) 1rem 3.5rem;
+  text-align: center;
+}
+
+.galaxy26-specs-teaser > p {
+  margin: 0;
+  color: #2182ff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.galaxy26-specs-teaser h3 {
+  margin: 0.4rem 0 1.4rem;
+  font-size: clamp(2.2rem, 5vw, 5rem);
+  line-height: 1.05;
+}
+
+.galaxy26-specs-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.galaxy26-specs-grid article {
+  text-align: left;
+  background: #080808;
+  border: 1px solid #242424;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.galaxy26-specs-grid h4 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.galaxy26-specs-grid strong {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: #7f84ff;
+  line-height: 1.2;
+}

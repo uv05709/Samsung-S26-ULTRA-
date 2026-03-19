@@ -1,0 +1,227 @@
+@media (max-width: 1200px) {
+  .buy-main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-price-strip {
+    flex-direction: column;
+  }
+
+  .buy-price-cta {
+    text-align: left;
+  }
+
+  .buy-intro-block h3 {
+    font-size: 2.6rem;
+  }
+
+  .compare-models-section h3 {
+    font-size: 2.8rem;
+  }
+
+  .compare-card h4 {
+    font-size: 1.8rem;
+  }
+
+  .key-specs-section h3 {
+    font-size: 2.8rem;
+  }
+
+  .spec-group h4 {
+    font-size: 2rem;
+  }
+
+  .spec-label,
+  .faq-row,
+  .buy-footer-grid a {
+    font-size: 1.05rem;
+  }
+
+  .spec-col strong {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .buy-benefit-bar {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .buy-strip-left {
+    font-size: 1.4rem;
+    gap: 0.8rem;
+  }
+
+  .exchange-grid,
+  .color-grid,
+  .feature-pills,
+  .care-grid,
+  .direct-grid,
+  .offers-grid,
+  .box-section,
+  .box-items,
+  .size-visual,
+  .compare-grid,
+  .compare-details-grid,
+  .spec-row,
+  .buy-footer-grid,
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .buy-intro-block {
+    text-align: left;
+  }
+
+  .galaxy26-main {
+    padding-top: 0;
+  }
+
+  .galaxy26-intro-dark p {
+    font-size: 1.95rem;
+  }
+
+  .galaxy26-video-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-side-card {
+    display: none;
+  }
+
+  .galaxy26-center-card {
+    min-height: 56vh;
+  }
+
+  .galaxy26-specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perf-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-privacy-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-privacy-side {
+    display: none;
+  }
+
+  .galaxy26-vapor-media {
+    width: 100%;
+  }
+
+  .galaxy26-vapor-side {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .galaxy26-battery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-storage-section {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-storage-media {
+    order: -1;
+  }
+
+  .galaxy26-nightography-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-space-zoom,
+  .galaxy26-selfie {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-photo-assist {
+    text-align: left;
+  }
+
+  .snapdragon-badge {
+    max-width: 180px;
+  }
+
+  .buy-intro-block h3 {
+    font-size: 2rem;
+  }
+
+  .buy-intro-block p {
+    font-size: 1.15rem;
+  }
+
+  .compare-models-section {
+    text-align: left;
+  }
+
+  .compare-models-section h3 {
+    font-size: 2.2rem;
+  }
+
+  .compare-card h4 {
+    font-size: 1.5rem;
+  }
+
+  .key-specs-section h3 {
+    font-size: 2.1rem;
+  }
+
+  .spec-group h4,
+  .faq-head h3,
+  .buy-featured-row h3 {
+    font-size: 1.75rem;
+  }
+
+  .ai-blurb,
+  .spec-label,
+  .spec-col strong,
+  .faq-row,
+  .buy-legal,
+  .buy-footer-breadcrumb,
+  .buy-footer-grid h4,
+  .buy-footer-grid a {
+    font-size: 1rem;
+  }
+
+  .galaxy26-bixby,
+  .galaxy26-ecosystem,
+  .galaxy26-innovation,
+  .galaxy26-box,
+  .knox-hero,
+  .accessory-card {
+    grid-template-columns: 1fr;
+  }
+
+  .knox-media img {
+    margin: 0 auto;
+  }
+
+  .knox-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .galaxy26-oneui,
+  .galaxy26-accessories {
+    text-align: left;
+  }
+
+  .oneui-media {
+    padding: 0.8rem;
+  }
+
+  .case-stack {
+    width: 220px;
+    height: 200px;
+  }
+
+  .case {
+    width: 130px;
+    height: 180px;
+  }
+}

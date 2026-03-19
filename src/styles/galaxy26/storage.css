@@ -1,0 +1,29 @@
+.galaxy26-storage-section {
+  background: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2.2rem;
+  align-items: center;
+  padding: 3.2rem clamp(1rem, 4vw, 4rem) 3.6rem;
+}
+
+.galaxy26-storage-copy h3 {
+  margin: 0 0 0.9rem;
+  font-size: clamp(2.2rem, 5vw, 5rem);
+  line-height: 1.08;
+}
+
+.galaxy26-storage-copy p {
+  margin: 0;
+  color: #cfd5e1;
+  font-size: clamp(1rem, 1.9vw, 1.6rem);
+  line-height: 1.5;
+}
+
+.galaxy26-storage-media img {
+  width: 100%;
+  border-radius: 1.2rem;
+  display: block;
+  object-fit: cover;
+}

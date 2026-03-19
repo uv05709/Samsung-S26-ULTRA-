@@ -1,0 +1,42 @@
+.galaxy26-knox {
+  background: #fff;
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.4rem, 6vw, 6rem);
+}
+
+.knox-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: clamp(1.8rem, 4vw, 4rem);
+}
+
+.knox-media img {
+  width: min(420px, 70vw);
+  display: block;
+  margin-left: auto;
+}
+
+.knox-cards {
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.2rem, 3vw, 2rem);
+}
+
+.knox-card {
+  background: #f6f7f9;
+  border-radius: 1.5rem;
+  padding: clamp(1.5rem, 2.5vw, 2.2rem);
+  box-shadow: 0 18px 40px rgba(15, 24, 40, 0.08);
+}
+
+.knox-card h4 {
+  margin: 0 0 0.6rem;
+  font-size: 1.25rem;
+}
+
+.knox-card p {
+  margin: 0;
+  color: #3c4558;
+  line-height: 1.6;
+}

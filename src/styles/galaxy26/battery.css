@@ -1,0 +1,80 @@
+.galaxy26-battery-compare {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2.8rem 1rem 3.2rem;
+}
+
+.galaxy26-battery-compare h3 {
+  margin: 0 0 1.8rem;
+  font-size: clamp(2rem, 4.5vw, 4.2rem);
+  line-height: 1.12;
+}
+
+.galaxy26-battery-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.battery-card {
+  background: #141414;
+  border-radius: 1.1rem;
+  padding: 1.6rem 1.4rem;
+  text-align: center;
+  border: 1px solid #222;
+}
+
+.battery-card h4 {
+  margin: 0 0 1.1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.battery-card strong {
+  display: block;
+  font-size: clamp(2.4rem, 3.6vw, 3.6rem);
+  color: #7f84ff;
+  margin-bottom: 0.3rem;
+}
+
+.battery-card p {
+  margin: 0.2rem 0;
+  color: #c7cbd4;
+}
+
+.battery-card span {
+  display: block;
+  margin-top: 0.9rem;
+  color: #8a90a0;
+  font-size: 0.95rem;
+}
+
+.battery-card b {
+  display: block;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  color: #7f84ff;
+  margin: 0.2rem 0 0.3rem;
+}
+
+.battery-card.comparison {
+  background: #0d0d0d;
+  border: 1px solid #2b2b2b;
+}
+
+.battery-card.comparison strong {
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  color: #aab0c2;
+}
+
+.battery-card.muted {
+  background: #181818;
+  color: #e5e7eb;
+}
+
+.battery-card.muted strong,
+.battery-card.muted b {
+  color: #9aa0b0;
+}

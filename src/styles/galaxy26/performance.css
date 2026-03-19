@@ -1,0 +1,86 @@
+.galaxy26-performance {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2.2rem 1rem 1.4rem;
+}
+
+.galaxy26-performance p {
+  margin: 0;
+  color: #2182ff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.galaxy26-performance h3 {
+  margin: 0.55rem auto 0;
+  max-width: 1200px;
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  line-height: 1.07;
+}
+
+.galaxy26-performance-video {
+  position: relative;
+  background: #000;
+}
+
+.galaxy26-performance-video video {
+  width: 100%;
+  display: block;
+  min-height: 480px;
+  object-fit: cover;
+}
+
+.galaxy26-performance-video .play-btn {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 1.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 999px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  cursor: pointer;
+}
+
+.galaxy26-performance-copy {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2.4rem 1rem 3.2rem;
+}
+
+.galaxy26-performance-copy > p {
+  margin: 0 auto;
+  max-width: 1180px;
+  color: #d2d8e2;
+  font-size: clamp(1.2rem, 2.1vw, 2rem);
+  line-height: 1.4;
+}
+
+.perf-stats {
+  margin: 2.2rem auto 0;
+  max-width: 1320px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.perf-stats article h4 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.perf-stats article strong {
+  display: block;
+  color: #7f84ff;
+  font-size: clamp(3rem, 4.2vw, 5rem);
+  line-height: 1;
+  margin: 0.45rem 0;
+}
+
+.perf-stats article span {
+  font-size: 1.2rem;
+  color: #d2d8e2;
+}
