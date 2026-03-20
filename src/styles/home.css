@@ -417,5 +417,241 @@
   font-size: 0.82rem;
   font-weight: 700;
 }
+/* ============================================================
+   RESPONSIVE FIXES FOR home.css
+   Append this block at the bottom of your existing home.css
+   ============================================================ */
 
+/* ── Tablet: 768px – 1024px ─────────────────────────────── */
+@media (max-width: 1024px) {
+
+  /* Lineup: 4 → 2 columns */
+  .lineup-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Essential / Reasons / Recommend: 4 → 2 columns */
+  .essential-grid,
+  .reasons-grid,
+  .recommend-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Four-section copy: shrink font a bit, safe positioning */
+  .four-section-copy h2 {
+    font-size: clamp(1.4rem, 3.5vw, 2.8rem);
+  }
+
+  .four-section-copy p {
+    font-size: clamp(0.85rem, 1.5vw, 1.3rem);
+  }
+}
+
+/* ── Large mobile: 481px – 767px ────────────────────────── */
+@media (max-width: 767px) {
+
+  /* Hero: taller sticky area for portrait phones */
+  .hero-section {
+    height: 120vh;
+  }
+
+  .hero-sticky {
+    height: 100svh; /* safe viewport height on mobile */
+  }
+
+  .hero-img {
+    object-position: center center;
+  }
+
+  /* Hero copy actions: smaller gap */
+  .hero-actions {
+    margin-left: 0.75rem;
+    margin-bottom: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  /* Lineup: 2 columns still fine on large phones */
+  .lineup-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .lineup-card {
+    min-height: 260px;
+  }
+
+  .lineup-card h3 {
+    font-size: 18px;
+  }
+
+  /* Feature promo: taller on mobile */
+  .feature-promo-banner {
+    min-height: clamp(220px, 56vw, 360px);
+    background-position: center top;
+  }
+
+  /* Four-section: stack copy above image on small screens */
+  .four-section-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .four-section-copy {
+    position: static;
+    transform: none;
+    padding: 1.2rem 1rem 0.8rem;
+  }
+
+  .four-section-copy h2 {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+  }
+
+  .four-section-copy p {
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    margin: 0.5rem 0 0.85rem;
+  }
+
+  /* Essential / Reasons / Recommend: 2 columns */
+  .essential-grid,
+  .reasons-grid,
+  .recommend-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Stores / Story: already 2-col, stays 2-col — fine */
+
+  /* Section padding reduction */
+  .category-section,
+  .content-wrap,
+  .story-section {
+    padding: 2rem 1rem;
+  }
+
+  .lineup-section {
+    padding: 1.2rem 1rem 0.5rem;
+  }
+
+  .four-section-wrap {
+    padding: 0.35rem 1rem 0.5rem;
+  }
+
+  .feature-promo-section {
+    padding: 0.5rem 1rem 0.3rem;
+  }
+}
+
+/* ── Small mobile: ≤ 480px ───────────────────────────────── */
+@media (max-width: 480px) {
+
+  /* Hero */
+  .hero-section {
+    height: 110vh;
+  }
+
+  /* Lineup: single column on very small screens */
+  .lineup-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .lineup-card {
+    min-height: 220px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .lineup-card h3 {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .lineup-card img {
+    width: 110px;
+    max-width: 110px;
+    flex-shrink: 0;
+  }
+
+  /* Lineup CTA: always visible on touch (no hover) */
+  .lineup-cta {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  /* Essential / Reasons: 1 column on very small */
+  .essential-grid,
+  .reasons-grid,
+  .recommend-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stores / Story: 1 column */
+  .stores-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Essential tabs: tighter on small screens */
+  .essential-tabs {
+    gap: 0.4rem;
+  }
+
+  .essential-tabs a {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  /* Feature promo banner */
+  .feature-promo-banner {
+    min-height: clamp(180px, 62vw, 280px);
+  }
+
+  /* Section padding */
+  .category-section,
+  .content-wrap,
+  .story-section {
+    padding: 1.5rem 0.85rem;
+  }
+
+  .lineup-section,
+  .four-section-wrap,
+  .feature-promo-section {
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
+}
+
+/* ── Navbar: hide desktop links on mobile ────────────────── */
+@media (max-width: 767px) {
+
+  .nav-links,
+  .nav-utility {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline-flex;
+  }
+
+  .search-pill {
+    min-width: unset;
+    padding: 0 0.65rem;
+  }
+
+  .search-pill span {
+    display: none; /* show icon only */
+  }
+}
+
+/* ── Touch devices: always show lineup CTA ───────────────── */
+@media (hover: none) {
+  .lineup-cta {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+}
 
