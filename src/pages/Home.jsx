@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 const Home = () => {
   useEffect(() => {
     if (typeof window === "undefined") return;
-    try {
+    try { 
       window.history.scrollRestoration = "manual";
     } catch {
       // ignore if not supported

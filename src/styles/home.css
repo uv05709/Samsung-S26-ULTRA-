@@ -120,6 +120,7 @@
   max-width: 1320px;
   margin: 0 auto;
   background-image: url("/Galaxy S26 ULTRA Buds.avif");
+  
   background-size: cover;
   background-position: center;
   border-radius: 0.1rem;
@@ -416,4 +417,5 @@
   font-size: 0.82rem;
   font-weight: 700;
 }
+
 
