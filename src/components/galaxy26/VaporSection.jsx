@@ -30,13 +30,13 @@ const VaporSection = ({ vaporVideoRef, isVaporPlaying, setIsVaporPlaying, toggle
         </div>
       </div>
 
-      <p className="galaxy26-vapor-copy galaxy26-reveal">
+      <p className="galaxy26-vapor-copy features-intro-overview__description common-text galaxy26-reveal">
         Galaxy S26 Ultra is built for demanding sessions, whether you're running heavy-spec games or using Galaxy AI.
         Powered by Snapdragon 8 Elite Gen 5 for Galaxy, it delivers amplified gaming performance with fast, smooth and
         highly responsive gameplay. And with advanced thermal management from the new Vapor Chamber design, heat is
         dissipated faster and more efficiently than ever before.
       </p>
-
+ 
       <p className="galaxy26-vapor-note galaxy26-reveal">*Copyright COGNOSPHERE. All Rights Reserved.</p>
     </section>
   );

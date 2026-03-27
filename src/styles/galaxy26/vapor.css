@@ -75,16 +75,25 @@
 }
 
 .galaxy26-vapor-copy {
-  margin: 1.35rem auto 0;
-  max-width: 1180px;
-  color: #d2d8e2;
-  font-size: clamp(1rem, 1.8vw, 1.75rem);
-  line-height: 1.45;
+  margin: 1.6rem auto 0;
+  width: min(92vw, 72.5rem);
+  max-width: 72.5rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.2rem, 1.9vw, 2.2rem);
+  line-height: 1.35;
+  text-align: center;
+  text-wrap: pretty;
+  word-spacing: normal;
+  letter-spacing: 0;
   padding: 0 1rem;
 }
 
 .galaxy26-vapor-note {
-  margin: 1.25rem 0 0;
+  width: min(92vw, 74rem);
+  margin: 1.25rem auto 0;
   font-size: 0.95rem;
   color: #b5bcc8;
+  text-align: center;
+  word-spacing: normal;
 }

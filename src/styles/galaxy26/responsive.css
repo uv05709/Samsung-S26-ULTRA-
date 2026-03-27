@@ -119,6 +119,19 @@
     bottom: 1rem;
   }
 
+  .galaxy26-vapor-copy {
+    width: min(94vw, 42rem);
+    font-size: clamp(1.05rem, 4.2vw, 1.35rem);
+    line-height: 1.48;
+    padding: 0 0.9rem;
+  }
+
+  .galaxy26-vapor-note {
+    width: min(94vw, 42rem);
+    font-size: 0.88rem;
+    padding: 0 0.9rem;
+  }
+
   .galaxy26-battery-grid {
     grid-template-columns: 1fr;
   }
